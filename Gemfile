@@ -12,6 +12,8 @@ gem 'rails', '~> 5.0.2'
 # Use postgres as the database for Active Record
 gem 'pg'
 
+# Hirb to make ActiveRecord queries look more like a table
+gem 'hirb'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

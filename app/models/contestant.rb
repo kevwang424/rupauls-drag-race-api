@@ -1,3 +1,6 @@
 class Contestant < ApplicationRecord
-  has_one :season
+
+  has_many :season_contestants
+  has_many :seasons, through: :season_contestants
+
 end

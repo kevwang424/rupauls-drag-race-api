@@ -6,7 +6,6 @@ class CreateSeasons < ActiveRecord::Migration[5.0]
       t.date :start_air_date
       t.date :end_air_date
       t.string :promo_image_url
-      t.integer :winner
 
       t.timestamps
     end

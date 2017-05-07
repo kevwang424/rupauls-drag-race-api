@@ -10,14 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170506035017) do
+ActiveRecord::Schema.define(version: 20170506201911) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "contestants", force: :cascade do |t|
     t.string   "name"
-    t.integer  "season_id"
     t.string   "birth_name"
     t.string   "hometown"
     t.date     "date_of_birth"
@@ -26,11 +25,20 @@ ActiveRecord::Schema.define(version: 20170506035017) do
     t.datetime "updated_at",    null: false
   end
 
+  create_table "season_contestants", force: :cascade do |t|
+    t.integer  "season_id"
+    t.integer  "contestant_id"
+    t.string   "promo_image_url"
+    t.boolean  "winner",          default: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+  end
+
   create_table "seasons", force: :cascade do |t|
     t.integer  "number_of_episodes"
     t.date     "start_air_date"
     t.date     "end_air_date"
-    t.integer  "winner"
+    t.string   "promo_image_url"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
   end
