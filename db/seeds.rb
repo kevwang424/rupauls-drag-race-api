@@ -5,7 +5,7 @@ def add_image_and_set_winner(image_url, winner=false)
   queen.save
 end
 
-# Season One
+# Seasons
 
 season_one = Season.create({
   number_of_episodes: 8,
@@ -21,6 +21,56 @@ season_two = Season.create({
   promo_image_url: "https://vignette1.wikia.nocookie.net/logosrupaulsdragrace/images/c/c0/Season2cast.png/revision/latest?cb=20140111092301"
   })
 
+season_three = Season.create({
+  number_of_episodes: 15,
+  start_air_date: Date.new(2011,1,24),
+  end_air_date: Date.new(2011,5,2),
+  promo_image_url: "https://vignette2.wikia.nocookie.net/logosrupaulsdragrace/images/e/e7/RPDRS3.jpg/revision/latest?cb=20161010170605"
+  })
+
+season_four = Season.create({
+  number_of_episodes: 14,
+  start_air_date: Date.new(2012,1,30),
+  end_air_date: Date.new(2012,4,30),
+  promo_image_url: "https://vignette3.wikia.nocookie.net/logosrupaulsdragrace/images/7/73/Rpdr_season4.jpg/revision/latest?cb=20130523174346"
+  })
+
+season_five = Season.create({
+  number_of_episodes: 14,
+  start_air_date: Date.new(2013,1,28),
+  end_air_date: Date.new(2013,5,6),
+  promo_image_url: "https://vignette2.wikia.nocookie.net/logosrupaulsdragrace/images/b/b6/S5cast.jpg/revision/latest?cb=20161204072510"
+  })
+
+season_six = Season.create({
+  number_of_episodes: 14,
+  start_air_date: Date.new(2014,2,24),
+  end_air_date: Date.new(2014,5,19),
+  promo_image_url: "https://vignette3.wikia.nocookie.net/logosrupaulsdragrace/images/d/d7/S6cast.jpg/revision/latest?cb=20161204073715"
+  })
+
+season_seven = Season.create({
+  number_of_episodes: 14,
+  start_air_date: Date.new(2015,3,2),
+  end_air_date: Date.new(2015,6,1),
+  promo_image_url: "https://vignette2.wikia.nocookie.net/logosrupaulsdragrace/images/d/d8/S7cast.jpg/revision/latest?cb=20161204080534"
+  })
+
+
+season_eight = Season.create({
+  number_of_episodes: 10,
+  start_air_date: Date.new(2016,3,7),
+  end_air_date: Date.new(2016,5,16),
+  promo_image_url: "https://vignette3.wikia.nocookie.net/logosrupaulsdragrace/images/c/c1/S8cast.jpg/revision/latest?cb=20161204082859"
+  })
+
+season_nine = Season.create({
+  number_of_episodes: 14,
+  start_air_date: Date.new(2017,3,24),
+  promo_image_url: "https://vignette4.wikia.nocookie.net/logosrupaulsdragrace/images/d/d5/97FMqTL.jpg/revision/latest?cb=20170404205837"
+  })
+
+# Season One
 season_one.contestants << Contestant.create({
   name: "Bebe Zahara Benet",
   birth_name: "Nea Marshall Kudi",
