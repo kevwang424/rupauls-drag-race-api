@@ -12,7 +12,7 @@ module Api
         @season_contestants = SeasonContestant.where(season_id: params[:id])
         @season_contestants.each do |queen|
           @contestants << {
-            queen: Contestant.find(queen.contestant_id),
+            queen: ContestantSerializer.new(Contestant.find(queen.contestant_id)),
             promo_image_url: queen.promo_image_url,
             winner: queen.winner
           }

@@ -14,6 +14,10 @@ gem 'pg'
 
 # Hirb to make ActiveRecord queries look more like a table
 gem 'hirb'
+
+# ActiveRecord serializer to filter what to show users
+gem 'active_model_serializers'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
