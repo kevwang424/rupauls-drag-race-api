@@ -1,17 +1,17 @@
 # Rupauls Drag Race API Documentation
 
-The Rupauls Drag Race API is a REST-style service designed for developers who wish to view information of about contestants of Rupauls Drag Race. 
+The Rupauls Drag Race API is a REST-style service designed for developers who wish to view information of about contestants of Rupauls Drag Race.
 
 ## Access to the API
 
-All requests to the API begin with: 
+All requests to the API begin with:
 
 ```shell
 http://somedomain.com/api
 ```
 ## Responses and data format
 
-All data is in [JSON](http://json.org) format. 
+All data is in [JSON](http://json.org) format.
 Currently the database only contains "season" and "contestant" information, more data will be added a later time.
 
 For a list of ALL contestants:
@@ -23,6 +23,7 @@ Here is a typical response:
 ```
 [
   {
+    id: 1,
     name: "Bebe Zahara Benet",
     birth_name: "Nea Marshall Kudi",
     hometown: "Minneapolis, Minnesota",
@@ -30,13 +31,14 @@ Here is a typical response:
     date_of_death: null
   },
   {
+    id: 2,
     name: "Nina Flowers",
     birth_name: "Jorge Luis Flores Sanchez",
     hometown: "Bayamon, Puerto Rico",
     date_of_birth: "1974-02-22",
     date_of_death: null
   }...
-]
+]  
 ```
 For a list of ALL seasons:
 ```shell
@@ -93,4 +95,3 @@ Here is a typical response:
 ## Future
 
 As more information becomes available through this API, additional documentation and examples will be provided.
-

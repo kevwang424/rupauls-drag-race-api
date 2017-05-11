@@ -14,6 +14,11 @@ module Api
         render json: @contestants
       end
 
+      def show
+        @contestant = Contestant.find(params[:id])
+        render json: @contestant
+      end
+
       def destroy
         @contestant = Contestant.find(params[:id])
         @contestant.destroy
