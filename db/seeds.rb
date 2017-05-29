@@ -9,6 +9,7 @@ end
 
 season_one = Season.create({
   number_of_episodes: 8,
+  name: "Season 1",
   start_air_date: Date.new(2009,2,2),
   end_air_date: Date.new(2009,3,23),
   promo_image_url: "https://vignette3.wikia.nocookie.net/logosrupaulsdragrace/images/8/81/Rpdr_season1.jpg/revision/latest?cb=20130523174244"
@@ -16,6 +17,7 @@ season_one = Season.create({
 
 season_two = Season.create({
   number_of_episodes: 11,
+  name: "Season 2",
   start_air_date: Date.new(2010,2,1),
   end_air_date: Date.new(2010,4,26),
   promo_image_url: "https://vignette1.wikia.nocookie.net/logosrupaulsdragrace/images/c/c0/Season2cast.png/revision/latest?cb=20140111092301"
@@ -23,6 +25,7 @@ season_two = Season.create({
 
 season_three = Season.create({
   number_of_episodes: 15,
+  name: "Season 3",
   start_air_date: Date.new(2011,1,24),
   end_air_date: Date.new(2011,5,2),
   promo_image_url: "https://vignette2.wikia.nocookie.net/logosrupaulsdragrace/images/e/e7/RPDRS3.jpg/revision/latest?cb=20161010170605"
@@ -30,6 +33,7 @@ season_three = Season.create({
 
 season_four = Season.create({
   number_of_episodes: 14,
+  name: "Season 4",
   start_air_date: Date.new(2012,1,30),
   end_air_date: Date.new(2012,4,30),
   promo_image_url: "https://vignette3.wikia.nocookie.net/logosrupaulsdragrace/images/7/73/Rpdr_season4.jpg/revision/latest?cb=20130523174346"
@@ -37,6 +41,7 @@ season_four = Season.create({
 
 season_five = Season.create({
   number_of_episodes: 14,
+  name: "Season 5",
   start_air_date: Date.new(2013,1,28),
   end_air_date: Date.new(2013,5,6),
   promo_image_url: "https://vignette2.wikia.nocookie.net/logosrupaulsdragrace/images/b/b6/S5cast.jpg/revision/latest?cb=20161204072510"
@@ -44,6 +49,7 @@ season_five = Season.create({
 
 season_six = Season.create({
   number_of_episodes: 14,
+  name: "Season 6",
   start_air_date: Date.new(2014,2,24),
   end_air_date: Date.new(2014,5,19),
   promo_image_url: "https://vignette3.wikia.nocookie.net/logosrupaulsdragrace/images/d/d7/S6cast.jpg/revision/latest?cb=20161204073715"
@@ -51,6 +57,7 @@ season_six = Season.create({
 
 season_seven = Season.create({
   number_of_episodes: 14,
+  name: "Season 7",
   start_air_date: Date.new(2015,3,2),
   end_air_date: Date.new(2015,6,1),
   promo_image_url: "https://vignette2.wikia.nocookie.net/logosrupaulsdragrace/images/d/d8/S7cast.jpg/revision/latest?cb=20161204080534"
@@ -59,6 +66,7 @@ season_seven = Season.create({
 
 season_eight = Season.create({
   number_of_episodes: 10,
+  name: "Season 8",
   start_air_date: Date.new(2016,3,7),
   end_air_date: Date.new(2016,5,16),
   promo_image_url: "https://vignette3.wikia.nocookie.net/logosrupaulsdragrace/images/c/c1/S8cast.jpg/revision/latest?cb=20161204082859"
@@ -66,8 +74,25 @@ season_eight = Season.create({
 
 season_nine = Season.create({
   number_of_episodes: 14,
+  name: "Season 9",
   start_air_date: Date.new(2017,3,24),
   promo_image_url: "https://vignette4.wikia.nocookie.net/logosrupaulsdragrace/images/d/d5/97FMqTL.jpg/revision/latest?cb=20170404205837"
+  })
+
+all_stars_one = Season.create({
+  number_of_episodes: 6,
+  name: "All Stars One",
+  start_air_date: Date.new(2012,10,22),
+  end_air_date: Date.new(2012,11,26),
+  promo_image_url: "https://vignette3.wikia.nocookie.net/logosrupaulsdragrace/images/5/53/Allstars.jpg/revision/latest?cb=20130523213046"
+  })
+
+all_stars_two = Season.create({
+  number_of_episodes: 9,
+  name: "All Stars Two",
+  start_air_date: Date.new(2016,8,25),
+  end_air_date: Date.new(2016,10,27),
+  promo_image_url: "https://vignette4.wikia.nocookie.net/logosrupaulsdragrace/images/0/05/AllStars2.jpg/revision/latest?cb=20160925172854"
   })
 
 # Season One
